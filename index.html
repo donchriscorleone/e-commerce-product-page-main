@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <div class="brand-container">
+        <button class="btn btn-icon btn-menu">
+          <span class="sr-only">Menu button</span>
+        </button>
+        <img src="./images/logo.svg" alt="Brand logo">
+        <ul class="list list-inline">
+          <li class="list__item clr-gray-blue" style="--my: 0; --mx: 1.2rem">
+            <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">Collections</a>
+          </li>
+          <li class="list__item clr-gray-blue" style="--my: 0; --mx: 1.2rem">
+            <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">Men</a>
+          </li>
+          <li class="list__item clr-gray-blue" style="--my: 0; --mx: 1.2rem">
+            <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">Women</a>
+          </li>
+          <li class="list__item clr-gray-blue" style="--my: 0; --mx: 1.2rem">
+            <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">About</a>
+          </li>
+          <li class="list__item clr-gray-blue" style="--my: 0; --mx: 1.2rem">
+            <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-buttons">
+        <div class="basket-container">
+          <!-- Filled -->
+          <button class="btn btn-icon btn-cart btn-badge">
+            <span class="sr-only">User Cart</span>
+            <span class="badge-text">0</span>
+          </button>
+          <div class="basket-card">
+            <div class="basket-card__title">
+                <span>Cart</span>
+                </div>
+              <div class="basket-card__content basket-card__content-empty">
+                <div class="basket-card__product">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="Product image">
+                    <div class="product-description">
+                    <span class="product-title">Autumn Limited Edition...</span>
+                    <div class="product-calculation">
+                        <span class="product-calculation__base-price">125.00</span>
+                        <span class="product-calculation__quantity">0</span>
+                        <span class="product-calculation__total-price">0</span>
+                    </div>
+                    </div>
+                </div>
+                <button class="btn btn-icon btn-delete">
+                    <span class="sr-only">Delete button</span>
+                </button>
+                <span class="basket-card__content-empty-text">Your cart is empty.</span>
+                </div>
+                <div class="basket-card__footer">
+                    <button class="btn btn-primary btn-block btn-action-cart">
+                        <span class="btn-action-cart-text">Checkout</span>
+                    </button>
+                </div>
+          </div>
+        </div>
+        <button class="btn btn-icon btn-avatar">
+          <span class="sr-only">User Cart</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="aside aside-open">
+    <button class="btn btn-icon btn-close">
+      <span class="sr-only">Close button</span>
+    </button>
+    <ul class="list">
+      <li class="list__item f-700 clr-black">
+        <a href="#" class="link">Collections</a>
+      </li>
+      <li class="list__item f-700 clr-black">
+        <a href="#" class="link">Men</a>
+      </li>
+      <li class="list__item f-700 clr-black">
+        <a href="#" class="link">Women</a>
+      </li>
+      <li class="list__item f-700 clr-black">
+        <a href="#" class="link">About</a>
+      </li>
+      <li class="list__item f-700 clr-black">
+        <a href="#" class="link">Contact</a>
+      </li>
+  </ul>
+  </aside>
+
+  <main class="main">
+    <div class="gallery">
+      <div class="main-highlight">
+        <button class="btn btn-icon btn-control btn-prev">
+          <span class="sr-only">Prev button</span>
+        </button>
+        <button class="btn btn-icon btn-control btn-next">
+          <span class="sr-only">Next button</span>
+        </button>
+      </div>
+      <div class="highlight-buttons">
+        <button class="btn btn-product btn-thumbnail-1 btn-product-active">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-2">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-3">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-4">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+      </div>
+    </div>
+
+    <section class="content">
+      <div class="content-header">
+        <span class="content-sub">Sneaker Company</span>
+        <h1 class="content-title">Fall Limited Edition Sneakers</h1>
+      </div>
+      <div class="content-description">
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+      <div class="content-pricing">
+        <span class="new-price">
+          <span class="current-price">$250.00</span>
+          <span class="discount">50%</span>
+        </span>
+        <p class="old-price">$250.00</p>
+      </div>
+      <div class="content-actions">
+        <div class="quantity-control">
+          <button class="btn btn-icon btn-minus">
+            <span class="sr-only">Decrease button</span>
+          </button>
+          <span class="quantity">0</span>
+          <button class="btn btn-icon btn-add">
+            <span class="sr-only">Add button</span>
+          </button>
+        </div>
+
+        <button class="btn btn-primary btn-action-cart">
+          <img src="./images/icon-cart.svg" alt="Cart icon">
+          <span class="btn-action-cart-text">Add to cart</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <dialog>
+    <div class="lightbox">
+      <div class="main-highlight">
+        <button class="btn btn-icon btn-control btn-prev">
+          <span class="sr-only">Prev button</span>
+        </button>
+        <button class="btn btn-icon btn-control btn-next">
+          <span class="sr-only">Next button</span>
+        </button>
+        <button class="btn btn-icon btn-close">
+          <span class="sr-only">Close button</span>
+        </button>
+      </div>
+      <div class="highlight-buttons">
+        <button class="btn btn-product btn-thumbnail-1 btn-product-active">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-2">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-3">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+        <button class="btn btn-product btn-thumbnail-4">
+          <span class="sr-only">Product thumbnail</span>
+          <span class="btn-thumbnail-container"></span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="link">Coded by Christopher</a>
+  </footer>
+
+
+  <!-- <header>
+    <nav class="nav">
+      <div class="brand"></div>
+      <ul class="list list-nav">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery">
+
+    </div>
+
+    <article class="content">
+      <div class="content-header">
+        <span class="content-sub">Sneaker Company</span>
+        <h1 class="content-title">Fall Limited Edition Sneakers</h1>
+      </div>
+      <div class="content-description">
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+      <div class="content-pricing">
+        <span class="new-price">
+          <span class="current-price">$250.00</span>
+          <span class="discount">50%</span>
+        </span>
+        <p class="old-price">$250.00</p>
+      </div>
+      <div class="content-actions">
+        <div class="quantity-control">
+          <button class="btn btn-icon">-</button>
+          <span class="quantity">0</span>
+          <button class="btn btn-icon">+</button>
+        </div>
+
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </article>
+  </main> -->
+
+  <!-- <footer>
+    <a href="https://www.instagram.com/christopheriilajom" target="_blank" class="attribution">Coded by Christopher II</a>
+  </footer> -->
+</body>
+</html>
